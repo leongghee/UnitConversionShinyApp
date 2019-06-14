@@ -1,0 +1,57 @@
+---
+title: "Unit Conversion App"
+author: "LG Chew"
+date: "June 14, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This app is created to convert frequently used items
+from imperial system to metric system.
+
+Items included for this app:
+
+- Weight
+- Height
+- Length
+- Temperature
+- Volume
+- Speed
+
+## The Idea Behind
+
+The idea of creating this app is because most countries uses metric system,
+while in the United States, imperial system is used.
+
+This app will be useful for everyone, such as:
+
+- foreign students who study in the US
+- foreign workers who are employed to work in the US
+- media when dealing with US related news
+
+## Process
+
+Users will need to input on the left side of the app,
+and the result will be displayed on the right side.
+
+Simple example of code for converting weight from lb to kg
+
+```{r}
+inweight = 100
+wtInput <- as.numeric(inweight)
+wtconv <- wtInput/2.205
+wtconv
+```
+
+## Summary
+
+You may access this app in the following link:
+<https://leongghee.shinyapps.io/UnitConversion>
+
+Source code can be viewed from here:
+<https://github.com/leongghee/UnitConversionShinyApp>
